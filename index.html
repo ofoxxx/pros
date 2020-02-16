@@ -1,9 +1,118 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Refresh" content="0; url=./Examples/Donate.html" />
-  </head>
-  <body>
-    <p>Please follow <a href="./Examples/Donate.html">this link</a>.</p>
-  </body>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+
+    <meta name="msapplication-TileColor" content="#E6E6FA">
+    <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#E6E6FA">
+
+    <link rel="manifest" href="manifest.json">
+
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('../sw.js').then(function (registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    </script>
+
+    <style type="text/css">
+        .hField{min-width:600px;margin-left:auto;margin-right:auto;}
+        .hTitle{height:50px;text-align:left;font-style:italic;}
+        .hCell{width:200px;height:50px;vertical-align:top;text-align:left;}
+        .hKeyword{width:200px;height:50px;vertical-align:top;text-align:left;}
+        .hKeynote{width:200px;height:50px;vertical-align:top;text-align:left;font-style:italic;}
+    </style>
+</head>
+<body>
+    <table class=hField>
+    <thead>
+        <tr>
+            <td class=hTitle colspan=3>
+                Title
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class=hKeynote>
+                Alternative
+            </td>
+            <td class=hCell>
+                <ul>
+                    <li>pro</li>
+                    <li>pro</li>
+                    <li>pro</li>
+                </ul>
+            </td>
+            <td class=hCell>
+                 <ul>
+                    <li>con</li>
+                    <li>con</li>
+                </ul>
+           </td>
+        </tr>
+        <tr>
+            <td class=hKeynote>
+                Alternative
+            </td>
+            <td class=hCell>
+                <ul>
+                    <li>pro</li>
+                    <li>pro</li>
+                    <li>pro</li>
+                </ul>
+            </td>
+            <td class=hCell>
+                <ul>
+                    <li>con</li>
+                    <li>con</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class=hKeyword>
+                Conclusion:
+            </td>
+            <td colspan=2 class=hCell>
+                <ul>
+                    <li>recommendation</li>
+                    <li>recommendation</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class=hKeyword>
+                Notes:
+            </td>
+            <td colspan=2 class=hCell>
+                <ul>
+                    <li>note</li>
+                    <li>note</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</body>
 </html>
