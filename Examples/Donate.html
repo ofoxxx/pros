@@ -1,0 +1,153 @@
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="../icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+
+    <meta name="msapplication-TileColor" content="#E6E6FA">
+    <meta name="msapplication-TileImage" content="../icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#E6E6FA">
+
+    <link rel="manifest" href="../manifest.json">
+
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('../sw.js').then(function (registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    </script>
+
+    <style type="text/css">
+        .hField {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hTitle {
+            height: 50px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .hCell {
+            width: 40%;
+            height: 50px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .hKeyword {
+            width: 20%;
+            height: 50px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .hKeynote {
+            width: 20%;
+            height: 50px;
+            vertical-align: top;
+            text-align: left;
+            font-style: italic;
+        }
+
+        .iTag {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <table class=hField>
+    <thead>
+        <tr>
+            <th class=hTitle colspan=3>
+                Donate
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class=hKeynote/>
+            <td align=center>
+                Pros
+            </td>
+            <td align=center>
+                Cons
+            </td>
+        </tr>
+        <tr>
+            <td class=hKeynote>
+                Do
+            </td>
+            <td class=hCell>
+                <ul>
+                    <li>Это реальная помощь и вклад в развитие и он будет замечен;</li>
+                    <li>Плюс в карму и искренняя благодарность авторов;</li>
+                    <li>Это большой шаг навстречу нашим хорошим отношениям; <item class=iTag>#loyalty;</item></li>
+                    <li>И мы будем рады поделиться с Вами чем-то полезным;</li>
+                    <li>Вы получите приятный сюрприз; <item class=iTag>#bonus;</item></li>
+                    <li>Возможность узнавать все наши новости одним из первых; <item class=iTag>#news;</item></li>
+                    <li>Мы прислушаемся к Вашему мнению;</li>
+                    <li>Мы будем стараться помочь Вам всеми силами; <item class=iTag>#support;</item></li>
+                    <li>Благодаря Вам, мы сделаем все лучше и быстрее; <item class=iTag>#updates;</item></li>
+                    <li>Думая о том, что еще мы можем сделать для наших пользователей, мы всегда будем помнить о Вас и наша лояльность гарантирована; <item class=iTag>#discount;</item><item class=iTag>#saving;</item></li>
+                    <li>Часть Вашей помощи мы направим на благотворительность;</li>
+                </ul>
+            </td>
+            <td class=hCell>
+                 <ul>
+                    <li>Вы потратите деньги, но если вдруг Вы решите, что потратили их зря, мы вернем их; <item class=iTag>#refund;</item></li>
+                    <li>Вы поделитесь с нами какой-то информацией о себе, но если Вам не понравится знакомство с нами, мы удалим полученные данные и не будем Вас беспокоить; <item class=iTag>#privacy;</item><item class=iTag>#GDPR;</item></li>
+                </ul>
+           </td>
+        </tr>
+        <tr>
+            <td class=hKeynote>
+                Don't
+            </td>
+            <td class=hCell>
+                <ul>
+                    <li>Немного экономии;</li>
+                    <li>Мы и так любим всех наших пользователей;</li>
+                </ul>
+            </td>
+            <td class=hCell>
+                <ul>
+                    <li>Упустите что-то интересное и полезное, что, возможно, изменило бы Вашу жизнь к лучшему;</li>
+                    <li>Не узнаете, как велика наша благодарность;</li>
+                    <li>Не почувствуете себя нашим героем;</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class=hKeyword>
+                Decision:
+            </td>
+            <td colspan=2 class=hCell>
+                Donate $5  $10  $20  $50  $___</li>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
