@@ -1,10 +1,10 @@
 'use strict';
 
-importScripts('sw-toolbox.js');
+importScripts('/pros/sw-toolbox.js');
 
-toolbox.precache(["index.html","./Examples/Donate.html"]);
+toolbox.precache(["/pros/index.html"]);
 
-toolbox.router.get('/icons/*', toolbox.cacheFirst);
+toolbox.router.get('/pros/icons/*', toolbox.cacheFirst);
 
 toolbox.router.get('/*', toolbox.networkFirst, {
   networkTimeoutSeconds: 5
