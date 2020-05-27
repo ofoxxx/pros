@@ -1,0 +1,20 @@
+System detection
+ Threading/Acceleration
+ Resolution
+ Aspect ratio
+ Input type
+
+UI/UX adoption
+ Visible area
+ Swipe-Scroll
+ Touch-Mouse
+ Alignment
+ Scaling
+ 
+Backend
+
+Save/Load/Refresh cache
+ Profile
+ Cache
+ Storage 
+
