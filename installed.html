@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	
+    <link rel="apple-touch-icon" sizes="57x57" href="/pros/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/pros/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/pros/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/pros/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/pros/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/pros/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/pros/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/pros/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/pros/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="/pros/icons/big-icon-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/pros/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/pros/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/pros/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/pros/icons/favicon-16x16.png">
+
+    <meta name="msapplication-TileColor" content="#E6E6FA">
+    <meta name="msapplication-TileImage" content="/pros/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#E6E6FA">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="/pros/manifest.json">
+
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/pros/sw.js').then(function (registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    </script>
+
+    <style type="text/css">
+		.sticky-note { height: 200px; width: 200px; background: #ffc; border-radius: 10px; border: 0px; overflow: hidden; }
+    </style>
+	
+	<title>Pros and cons decision maker template</title>
+	<meta name="Description" content="Pros and cons decision maker template.">
+</head>
+<body>
+	<div id="notes">
+		<div class="sticky-note">
+		</div>
+	</div>
+</body>
+</html>
