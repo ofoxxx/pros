@@ -3,7 +3,7 @@
   "short_name": "Pros",
   "description": "Decision maker",
   "lang": "en",
-  "start_url": "/pros/installed.html",
+  "start_url": "/pros/index.html",
   "display": "standalone",
   "theme_color": "#E6E6FA",
   "background_color": "#E6E6FA",

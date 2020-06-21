@@ -2,123 +2,23 @@
 <html lang="en">
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-	
-    <link rel="apple-touch-icon" sizes="57x57" href="/pros/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/pros/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/pros/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/pros/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/pros/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/pros/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/pros/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/pros/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/pros/icons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="/pros/icons/big-icon-512x512.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/pros/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/pros/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/pros/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/pros/icons/favicon-16x16.png">
 
-    <meta name="msapplication-TileColor" content="#E6E6FA">
-    <meta name="msapplication-TileImage" content="/pros/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#E6E6FA">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" >
+		function onoad()
+		{
+			var mobile = /Mobi/.test(navigator.userAgent);
+			var mainPage = mobile? "mobile.html" : "full.html";
+			window.location.replace(mainPage);
+		}
+	</script>
 
-    <link rel="manifest" href="/pros/manifest.json">
-
-    <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/pros/sw.js').then(function (registration) {
-            // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }, function(err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
-            });
-        });
-    }
-    </script>
-
-    <style type="text/css">
-        .hField{min-width:600px;margin-left:auto;margin-right:auto;}
-        .hTitle{height:50px;text-align:left;font-style:italic;}
-        .hCell{width:200px;height:50px;vertical-align:top;text-align:left;}
-        .hKeyword{width:200px;height:50px;vertical-align:top;text-align:left;}
-        .hKeynote{width:200px;height:50px;vertical-align:top;text-align:left;font-style:italic;}
-    </style>
 	
 	<title>Pros and cons decision maker template</title>
 	<meta name="Description" content="Pros and cons decision maker template.">
 </head>
-<body>
-    <table class=hField>
-    <thead>
-        <tr>
-            <td class=hTitle colspan=3>
-                Title
-            </td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class=hKeynote>
-                Alternative
-            </td>
-            <td class=hCell>
-                <ul>
-                    <li>pro</li>
-                    <li>pro</li>
-                    <li>pro</li>
-                </ul>
-            </td>
-            <td class=hCell>
-                 <ul>
-                    <li>con</li>
-                    <li>con</li>
-                </ul>
-           </td>
-        </tr>
-        <tr>
-            <td class=hKeynote>
-                Alternative
-            </td>
-            <td class=hCell>
-                <ul>
-                    <li>pro</li>
-                    <li>pro</li>
-                    <li>pro</li>
-                </ul>
-            </td>
-            <td class=hCell>
-                <ul>
-                    <li>con</li>
-                    <li>con</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td class=hKeyword>
-                Conclusion:
-            </td>
-            <td colspan=2 class=hCell>
-                <ul>
-                    <li>recommendation</li>
-                    <li>recommendation</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td class=hKeyword>
-                Notes:
-            </td>
-            <td colspan=2 class=hCell>
-                <ul>
-                    <li>note</li>
-                    <li>note</li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-    </table>
+<body onload="onLoad()">
 </body>
+<div>
+If you was not redirected automatically, please choose <a href="mobile.html">mobile</a> or <a href="full.html">desktop</a> version
+</div>
 </html>
