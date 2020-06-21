@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+	<script type="text/javascript" >
+		function load()
+		{
+			document.getElementById('Report').innerHTML = 
+            "<div> Agent: " + navigator.userAgent + "</div>" +
+			"<div> Platform: " + navigator.platform + "</div>" +
+			"<div> Version: " + navigator.appVersion + "</div>" +
+            "<div> Resolution: "+ window.screen.availWidth + " x " + window.screen.availHeight + "</div>";
+		}
+		</script>
+
+	<title>Test system</title>
+	<meta name="Description" content="Test system and collect info.">
+</head>
+<body onload="load()">
+    <div id=Report>
+	</div>
+</body>
+</html>
