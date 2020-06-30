@@ -4,13 +4,18 @@
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 
 	<script type="text/javascript" >
+		function isTouch()
+		{
+			return !!('ontouchstart' in window || navigator.maxTouchPoints);
+		}
 		function load()
 		{
 			document.getElementById('Report').innerHTML = 
-            "<div> Agent: " + navigator.userAgent + "</div>" +
-			"<div> Platform: " + navigator.platform + "</div>" +
-			"<div> Version: " + navigator.appVersion + "</div>" +
-            "<div> Resolution: "+ window.screen.availWidth + " x " + window.screen.availHeight + "</div>";
+			"<div>Agent: " + navigator.userAgent + "</div>" +
+			"<div>Platform: " + navigator.platform + "</div>" +
+			"<div>Version: " + navigator.appVersion + "</div>" +
+			"<div>Resolution: "+ window.screen.availWidth + " x " + window.screen.availHeight + "</div>" +
+			"<div>" + (isTouch()? "Touch" : "Non-touch") + " screen</div>";
 		}
 	</script>
 
