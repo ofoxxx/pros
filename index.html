@@ -7,7 +7,7 @@
 		function onLoad()
 		{
 			var mobile = /Mobi/.test(navigator.userAgent);
-			var mainPage = mobile? "mobile.html" : "full.html";
+			var mainPage = mobile? "notes.html" : "spreadsheet.html";
 			window.location.replace(mainPage);
 		}
 	</script>
@@ -19,6 +19,6 @@
 <body onload="onLoad()">
 </body>
 <div>
-If you was not redirected automatically, please choose <a href="mobile.html">mobile</a> or <a href="full.html">desktop</a> version
+If you was not redirected automatically, please choose <a href="notes.html">mobile (notes)</a> or <a href="spreadsheet.html">desktop (spreadsheet)</a> version
 </div>
 </html>
